@@ -28,4 +28,4 @@
  ## **APP DEMO**
  ----------------------------------------------------------------
 
- ### Heroku link for the APP: https://seif-pizzaria.herokuapp.com/
+ ### Heroku link for the APP: https://seif-pizzaria.herokuapp.com/pizzas/new

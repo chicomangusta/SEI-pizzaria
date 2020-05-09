@@ -31,13 +31,13 @@ class New extends React.Component {
           <h5>Meats</h5>
           <p>
             Pepperoni: <input type="checkbox" name="pepperoni" />
-            Bacon:    <input type="checkbox" name="bacon" />
-            Beef:     <input type="checkbox" name="beef" />
-            Salami:   <input type="checkbox" name="salami" />
-            Chicken:  <input type="checkbox" name="chicken" />
+            Bacon:     <input type="checkbox" name="bacon" />
+            Beef:      <input type="checkbox" name="beef" />
+            Salami:    <input type="checkbox" name="salami" />
+            Chicken:   <input type="checkbox" name="chicken" />
             <br />
             <h5>Non-Meats</h5>
-            
+
             Catupiry:     <input type="checkbox" name="catupiry" />
             Black Olives: <input type="checkbox" name="olives" />
             Onions:       <input type="checkbox" name="onions" />
