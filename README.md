@@ -11,9 +11,16 @@
 ### A simple pizza order using Full-Stack web application.
 
 
+
+
+
+
 ## **Used Technologies:**
 -------------------------
 ### React JSX, MongoDB, Mogoose, HTML5, CSS, JavaScript, JSON, Node.
+
+
+
 
 
 
