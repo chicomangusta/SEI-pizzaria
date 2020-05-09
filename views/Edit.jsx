@@ -36,7 +36,7 @@ class Edit extends React.Component {
               Onions:        <input type="checkbox" name="onions"    checked={onions} />
               Tomatos:       <input type="checkbox" name="tomato"    checked={tomato} />
               Jalapenos:     <input type="checkbox" name="jalapenos" checked={jalapenos} />
-              
+              <br/>
 
             <h4>ORDER TYPE</h4>  
               Delivery: <input type="checkbox" name="delivery" checked={delivery} /> <br />

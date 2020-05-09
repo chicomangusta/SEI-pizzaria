@@ -23,6 +23,18 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/demo-2
 // Connect to Mongo
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
+//================== MONGOOSE ===========================================
+
+mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+mongoose.connection.once('open', () => {
+    console.log('connected to mongo');
+});
+//=======================================================================
+
+
 
 
 // Error / success
@@ -31,9 +43,6 @@ mongoose.connection.on('connected', () => console.log('mongo connected: ', MONGO
 mongoose.connection.on('disconnected', () => console.log('mongo disconnected'));
 // open the connection to mongo
 mongoose.connection.on('open', () => {});
-
-
-
 
 
 
@@ -49,21 +58,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
 //method override
 app.use(methodOverride('_method'));
-//html
-// app.use('/', router);
 
 
-
-//================== MONGOOSE ===========================================
-
-// mongoose.connect('mongodb://localhost:27017/basiccrud', {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-// });
-// mongoose.connection.once('open', () => {
-//     console.log('connected to mongo');
-// });
-//=======================================================================
 
 
 
@@ -71,10 +67,7 @@ app.use(methodOverride('_method'));
 //          Routers
 //=============================
 
-//ROUTE TO HTML
-// roues.get('/', function (req, res) {
-//     res.sendFile(path + 'index.html')
-// })
+
 
 //====================
 //       Index
@@ -489,6 +482,13 @@ app.put('/pizzas/:id', (req, res) => {
         res.redirect('/pizzas');
     });
 });
+
+
+
+
+
+
+
 
 
 //=============================

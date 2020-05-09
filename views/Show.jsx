@@ -7,7 +7,6 @@ class Show extends React.Component {
         return (
           
           
-
           <div>   
             <h1>PIZZARIA</h1><br/><br/>      
             <h3>Review Your Order:</h3> <br />
