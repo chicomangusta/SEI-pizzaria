@@ -17,7 +17,7 @@
 
 ## **Used Technologies:**
 -------------------------
-### React JSX, MongoDB, Mogoose, HTML5, CSS, JavaScript, JSON, Node, Cloudinay
+### React JSX, MongoDB, Mogoose, HTML5, CSS, JavaScript, JSON, Node, Cloudinay.
 
 
 
